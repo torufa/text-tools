@@ -11,7 +11,7 @@ textInput.addEventListener("input", function () {
    let words = (text === "" ? [] : (text.split(/\s+/)));
    wordCount.innerText = words.length;
 //character counting
-    
+    charCount.innerText = text.length;
 
 
 
