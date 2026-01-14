@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text - Tools</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="src/font-awesome.css">
 </head>
-<body>
-    <div class="container">
-        <textarea id="textInput" placeholder="Please enter your text here...."></textarea>
-        <div class="tools">
+
+<body class="bg-green-50 min-h-screen flex flex-col justify-center items-center text-gray-800">
+    <div class="w-[94%] max-w-[980px] bg-white rounded-xl p-8 shadow-lg shadow-green-200/16">
+        <textarea id="textInput"
+            class="w-full h-[260px] p-3.5 rounded-lg border-2 border-green-200 bg-green-50 text-lg leading-relaxed text-emerald-800 outline-none transition-all duration-250 ease-in-out resize-none"
+            placeholder="Please enter your text here...."></textarea>
+        <div class="flex flex-wrap gap-3 mt-5">
             <p><i class="fa-solid fa-book-open"></i>Words: <span id="wordCount">0</span></p>
             <p><i class="fa-solid fa-font"></i>Characters: <span id="charCount">0</span></p>
+            <p><i class="fa-solid fa-0"></i>Characters (No Spaces): <span id="charNoSpacesCount">0</span></p>
             <p><i class="fa-solid fa-quote-right"></i>Sentences: <span id="sentenceCount">0</span></p>
             <p><i class="fa-solid fa-align-left"></i>Paragraphs: <span id="paragraphCount">0</span></p>
         </div>
     </div>
-
-    
-
-   <script src="script.js"></script> 
+    <script src="script.js"></script>
 </body>
+
 </html>
